@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Link Opener",
+  "version": "1.0",
+  "description": "opens any link in the same page for quick reading",
+  "icons": {
+    "16": "icons/favicon-16x16.png",
+    "32": "icons/favicon-32x32.png",
+    "48": "icons/icon-48x48.png",
+    "128": "icons/icon-128x128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/dragElement.js",
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ]
+}
